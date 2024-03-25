@@ -18,5 +18,22 @@ h1{
     font-size: 17px;
 } */
 body{
-    background-color: #36454F;
+    background-color: whitesmoke;
+}
+#todo-container {
+    border:1px solid gray;
+    border-radius: 5px;
+    background-color: beige;
+    width:100px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding:5px;
+    margin:5px;
 }

@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="login">
-        <input type="text" name="username" value="username">
-        <input type="number" name="password" value="password" required>
-        <button id="button">Submit</button>
+  
+    <form id="loginForm" onsubmit="validateForm(event)">
+        <h2>Login</h2>
+        <div>
+            <label for="firstName">Username:</label>
+            <input type="text" id="userName" name="userName" required>
+            <span id="userNameError" class="error"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
     </div>
-    
+    </form>
 </body>
 </html>

@@ -3,15 +3,18 @@ box-sizing: border-box;
 padding:0;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 h1{
 font-size: 50px;
 justify-content: center;
 align-items: center;
 display:flex;
 }
+
 .container {
 background-color: #f4f4f4;
 }
+
 #todo-container { 
 width:100px;
 display:flex;
@@ -19,6 +22,7 @@ flex-direction: column;
 align-items:center;
 justify-content: center;
 }
+
 .login{
 display:flex;
 justify-content:center;
@@ -27,16 +31,19 @@ flex-direction: column;
 padding:5px;
 margin:5px;
 }
+
 #input{
 width:18rem;
 height:2rem;
 margin:5px;
 }
+
 #button{
 padding:5px;
 margin:5px;
 background-color: #4caf50;
 }
+
 #button2{
 padding:5px;
 margin:5px;
@@ -53,6 +60,7 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 }
+
 #loginForm {
 background-color: #fff;
 padding: 20px;
@@ -60,11 +68,13 @@ border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 width: 300px;
 }
+
 label {
 display: block;
 margin-bottom: 5px;
 color: #333;
 }
+
 input[type="text"],
 input[type="password"] {
 width: 100%;
@@ -74,10 +84,12 @@ border: 1px solid #ccc;
 border-radius: 3px;
 box-sizing: border-box;
 }
+
 .error {
 color: red;
 font-size: 12px;
 }
+
 input[type="submit"] {
 background-color: #4caf50;
 color: #fff;
@@ -129,4 +141,13 @@ width: 100%;
 }
 input[type="submit"]:hover {
 background-color: #45a049;
+}
+
+.link-text {
+    color:#333;
+}
+.btn-primary{
+padding:5px;
+margin:5px;
+background-color: #4caf50;
 }

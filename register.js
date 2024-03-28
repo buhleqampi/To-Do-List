@@ -1,6 +1,7 @@
  function validateForm(event) {
         event.preventDefault(); // Prevent form submission
 
+
         // Validation variables
         let isValid = true;
         const firstName = document.getElementById('firstName').value.trim();
@@ -49,4 +50,6 @@
         if (isValid) {
             document.getElementById('registrationForm').submit();
         }
+
+        window.location.replace("login.html");
     }

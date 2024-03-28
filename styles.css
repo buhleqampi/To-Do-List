@@ -1,153 +1,213 @@
-*{
-box-sizing: border-box;
-padding:0;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    /* Universal Styling */
+    *{
+    box-sizing: border-box;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-h1{
-font-size: 50px;
-justify-content: center;
-align-items: center;
-display:flex;
-}
+    /* Body styling */
+    body {
 
-.container {
-background-color: #f4f4f4;
-}
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    /* index.html styling */
+    .container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .search-feature {
+        margin-bottom: 20px;
+    }
+    
+    .search {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .btn-primary {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .btn-primary:hover {
+        background-color: #45a049;
+    }
+    
+    #todo-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    #titleInput, #descriptionInput {
+        width: calc(100% - 22px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .btns {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    #button, #button2 {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 45%;
+    }
+    
+    #button:hover, #button2:hover {
+        background-color: #45a049;
+    }
+    #todo-item {
+        background-color: #6B9080;
+        padding:10px;
+        margin:10px;
+        margin-top: 20px;
+    }
+    ul li{
+        list-style-type: none ;
+    }
 
-#todo-container { 
-width:100px;
-display:flex;
-flex-direction: column;
-align-items:center;
-justify-content: center;
-}
+    .list-group-item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        background-color: #F6FFF8;
+    }
+    
+    .list-group-item i {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    
+    /* Registration page */
+    #registrationForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    }
 
-.login{
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction: column;
-padding:5px;
-margin:5px;
-}
+    label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    }
 
-#input{
-width:18rem;
-height:2rem;
-margin:5px;
-}
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    }
 
-#button{
-padding:5px;
-margin:5px;
-background-color: #4caf50;
-}
+    .error {
+    color: red;
+    font-size: 12px;
+    }
 
-#button2{
-padding:5px;
-margin:5px;
-background-color: #4caf50;
-}
+    input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    }
 
-body {
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
+    input[type="submit"]:hover {
+    background-color: #45a049;
+    }
+    /* Login Page styling */
+    .login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding:5px;
+    margin:5px;
+    }
 
-#loginForm {
-background-color: #fff;
-padding: 20px;
-border-radius: 5px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
-}
+    #loginForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    }
 
-label {
-display: block;
-margin-bottom: 5px;
-color: #333;
-}
+    label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    }
 
-input[type="text"],
-input[type="password"] {
-width: 100%;
-padding: 8px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
-border-radius: 3px;
-box-sizing: border-box;
-}
+    input[type="text"],
+    input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    }
 
-.error {
-color: red;
-font-size: 12px;
-}
+    .error {
+    color: red;
+    font-size: 12px;
+    }
 
-input[type="submit"] {
-background-color: #4caf50;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 3px;
-cursor: pointer;
-}
-input[type="submit"]:hover {
-background-color: #45a049;
-}
+    input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+    input[type="submit"]:hover {
+    background-color: #45a049;
+    }
 
+    /* .link-text {
+        color:#4caf50;
+    }
 
-#registrationForm {
-background-color: #fff;
-padding: 20px;
-border-radius: 5px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-width: 300px;
-}
-label {
-display: block;
-margin-bottom: 5px;
-color: #333;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"] {
-width: 100%;
-padding: 8px;
-margin-bottom: 10px;
-border: 1px solid #ccc;
-border-radius: 3px;
-box-sizing: border-box;
-}
-.error {
-color: red;
-font-size: 12px;
-}
-input[type="submit"] {
-background-color: #4caf50;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 3px;
-cursor: pointer;
-width: 100%;
-}
-input[type="submit"]:hover {
-background-color: #45a049;
-}
-
-.link-text {
-    color:#333;
-}
-.btn-primary{
-padding:5px;
-margin:5px;
-background-color: #4caf50;
-}
+    .btn-primary{
+    padding:5px;
+    margin:5px;
+    background-color: #4caf50;
+    } */

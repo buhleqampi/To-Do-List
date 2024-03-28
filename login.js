@@ -1,15 +1,12 @@
 function validateForm(event) {
+    // Prevents  the form from being submitted
     event.preventDefault(); 
 
-    
     var userNameInput = document.getElementById("userName");
     var passwordInput = document.getElementById("password");
-
-    
     var userNameError = document.getElementById("userNameError");
     var passwordError = document.getElementById("passwordError");
 
-    
     userNameError.textContent = "";
     passwordError.textContent = "";
 

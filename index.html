@@ -10,12 +10,11 @@
 <body>
     <div class="container">
     <h1>To do list</h1>
-    <div class="search-feature">
-    <input type="text" placeholder="Search.." class="search">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
+    <!-- <div class="search-feature">
+    <input type="text" placeholder="Search.." class="search"><span><i class="fa-solid fa-magnifying-glass"></i></span> 
+    </div> -->
     <div>
-        <button class="btn-primary"><a href="./login.html"></a></button>
+        <button class="btn-primary"><a class="logout-text" href="./login.html">Logout</a></button>
     </div>
   
     <div id="todo-container" style="width:18rem;">
@@ -25,12 +24,15 @@
     <div class="btns">
         <button id="button">Add</button>
       
-
     </div>  
-    </ul>
-    <ul id="todo-item">
+
+    <div class="tod-div">
+        <ul id="todo-item">
         
-    </ul>
+        </ul>
+    </div>
+    
+    
     <div class="clear">
         <button id="button2">Delete All</button>
     </div>

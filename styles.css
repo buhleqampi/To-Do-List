@@ -7,7 +7,6 @@
 
     /* Body styling */
     body {
-
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -16,95 +15,117 @@
     align-items: center;
     height: 100vh;
     }
+
     /* index.html styling */
     .container {
-        text-align: center;
-        margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
     }
-    
+
     .search-feature {
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     }
-    
+
     .search {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
     }
     
     .btn-primary {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    /* cursor: pointer; */
+    width: 100%;
+    margin-bottom: 10px;
     }
     
     .btn-primary:hover {
-        background-color: #45a049;
+    background-color: #45a049;
     }
     
     #todo-container {
-        width: 300px;
-        margin: 0 auto;
+    width: 300px;
+    margin: 0 auto;
     }
     
     #titleInput, #descriptionInput {
-        width: calc(100% - 22px);
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        box-sizing: border-box;
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
     }
     
     .btns {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
     }
     
     #button, #button2 {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-        width: 45%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    /* cursor: pointer; */
+    width: 45%;
+    
+    }
+
+    #button2{
+    margin-bottom: 20px;
     }
     
     #button:hover, #button2:hover {
-        background-color: #45a049;
+    background-color: #45a049;
     }
+
     #todo-item {
-        background-color: #6B9080;
-        padding:10px;
-        margin:10px;
-        margin-top: 20px;
+    padding:10px;
+    margin:10px;
+    max-height: 300px;
+    overflow: auto;
     }
+
     ul li{
-        list-style-type: none ;
+    list-style-type: none ;
     }
 
     .list-group-item {
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-        background-color: #F6FFF8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #F6FFF8;
+
     }
     
     .list-group-item i {
-        margin-left: 10px;
-        cursor: pointer;
+    margin-left: 10px;
+    /* cursor: pointer; */
     }
     
+    .logout-text{
+    color:white;
+    text-decoration:none;
+    }
+
+    .btn-primary{
+    width: 45%;
+    }
+
+    .link-text{
+    color:black;
+    text-decoration:none;
+    }
     
     /* Registration page */
     #registrationForm {
@@ -144,7 +165,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 100%;
     }
 
@@ -196,18 +217,8 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    cursor: pointer;
+    /* cursor: pointer; */
     }
     input[type="submit"]:hover {
     background-color: #45a049;
     }
-
-    /* .link-text {
-        color:#4caf50;
-    }
-
-    .btn-primary{
-    padding:5px;
-    margin:5px;
-    background-color: #4caf50;
-    } */

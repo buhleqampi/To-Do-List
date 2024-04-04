@@ -1,8 +1,12 @@
     /* Universal Styling */
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
     *{
     box-sizing: border-box;
     padding:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
     }
 
     /* Body styling */
@@ -14,6 +18,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
     }
 
     /* index.html styling */
@@ -53,6 +60,7 @@
     #todo-container {
     width: 300px;
     margin: 0 auto;
+    
     }
     
     #titleInput, #descriptionInput {
@@ -104,8 +112,6 @@
     padding: 10px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-    background-color: #F6FFF8;
-
     }
     
     .list-group-item i {
@@ -221,4 +227,10 @@
     }
     input[type="submit"]:hover {
     background-color: #45a049;
+    }
+    
+    /* Navbar */
+    #picture {
+        width:120px;
+        height:80px;
     }

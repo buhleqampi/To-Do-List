@@ -38,6 +38,7 @@ function renderTasks() {
         const li = document.createElement('li');
         li.className = 'list-group-item';
         li.innerHTML = `<strong>Title:</strong> ${task.title}<br>
+        
         <strong>Description:</strong> ${task.description}<br>
         <strong>Timestamp:</strong> ${task.timestamp}
         <i onclick="delTask(${tasks.length - 1 - index})" class="fa-solid fa-trash"></i>
@@ -80,3 +81,7 @@ function saveTasksToLocalStorage() {
 }
 
 renderTasks()
+
+function searchTasks(){
+    
+}

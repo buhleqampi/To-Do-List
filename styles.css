@@ -19,7 +19,7 @@
     font-family: "Patrick Hand", cursive;
     font-weight: 400;
     font-style: normal;
-    background-image: url(Assets/pexels-photo-373892.jpeg);
+    background-image: url(Assets/LoginRegister.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -30,10 +30,13 @@
       height:80px;
   }
   .container {
-    background-color: #fff;
+    background: transparent;
   }
-  .container:hover {
-    background: none;
+  main {
+    background-image: url(Assets/AddTaskDesk.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
   }
 
     /* index.html styling */
@@ -112,12 +115,18 @@
     #button:hover, #button2:hover {
     background-color: #45a049;
     }
-
+    /* .tod-div{
+      background-image: url(Assets/AltPaper.png);
+      background-repeat: no-repeat;
+      background-size:cover;
+    } */
     #todo-item {
     padding:10px;
     margin:10px;
     max-height: 300px;
     /* overflow: auto; */
+    
+  
     }
 
     ul li{
@@ -126,8 +135,12 @@
 
     .list-group-item {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid 333;
     margin-bottom: 10px;
+    background-color: #333;
+    border-radius: 10px 10px;
+    justify-content: end;
+    align-items:end;
     }
     
     .list-group-item i {
@@ -137,6 +150,9 @@
     .logout-text{
     color:white;
     text-decoration:none;
+    border:1px solid;
+    border-radius:10px 10px;
+
     }
 
     .btn-primary{

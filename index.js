@@ -1,5 +1,3 @@
-// JSON.parse() job is to convert string to its normal form
-// Declaration of variables
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 const addButton = document.querySelector('#button');
 const newItem = document.querySelector('#todo-item');
@@ -7,7 +5,7 @@ const deleteButton = document.querySelector('#button2');
 const titleInput = document.querySelector('#titleInput');
 const descriptionInput = document.querySelector('#descriptionInput');
 
-// EventListeners
+
 addButton.addEventListener('click', addTask);
 deleteButton.addEventListener('click', deleteAllTasks);
 
@@ -38,7 +36,6 @@ function renderTasks() {
         const li = document.createElement('li');
         li.className = 'list-group-item';
         li.innerHTML = `<strong>Title:</strong> ${task.title}<br>
-        
         <strong>Description:</strong> ${task.description}<br>
         <strong>Timestamp:</strong> ${task.timestamp}
         <i onclick="delTask(${tasks.length - 1 - index})" class="fa-solid fa-trash"></i>

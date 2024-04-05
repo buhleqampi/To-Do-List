@@ -1,35 +1,53 @@
-    /* Universal Styling */
-    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
     *{
     box-sizing: border-box;
     padding:0;
     font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     }
 
     /* Body styling */
     body {
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
     font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(Assets/pexels-photo-373892.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     }
+     /* Navbar */
+     #picture {
+      width:120px;
+      height:80px;
+  }
+  .container {
+    background-color: #fff;
+  }
+  .container:hover {
+    background: none;
+  }
 
     /* index.html styling */
-    .container {
-    text-align: center;
-    margin-top: 20px;
-    }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      /* background-color: #fff; */
+  }
 
-    .search-feature {
+    /* .search-feature {
     margin-bottom: 20px;
     }
 
@@ -40,7 +58,7 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-    }
+    } */
     
     .btn-primary {
     background-color: #4caf50;
@@ -48,7 +66,6 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    /* cursor: pointer; */
     width: 100%;
     margin-bottom: 10px;
     }
@@ -84,7 +101,6 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    /* cursor: pointer; */
     width: 45%;
     
     }
@@ -101,7 +117,7 @@
     padding:10px;
     margin:10px;
     max-height: 300px;
-    overflow: auto;
+    /* overflow: auto; */
     }
 
     ul li{
@@ -116,7 +132,6 @@
     
     .list-group-item i {
     margin-left: 10px;
-    /* cursor: pointer; */
     }
     
     .logout-text{
@@ -171,7 +186,6 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    /* cursor: pointer; */
     width: 100%;
     }
 
@@ -223,14 +237,9 @@
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    /* cursor: pointer; */
     }
     input[type="submit"]:hover {
     background-color: #45a049;
     }
+  
     
-    /* Navbar */
-    #picture {
-        width:120px;
-        height:80px;
-    }

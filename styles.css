@@ -257,5 +257,9 @@
     input[type="submit"]:hover {
     background-color: #45a049;
     }
+    a{
+      border: 1px solid ;
+      border-radius:10px 10px;
+    }
   
     

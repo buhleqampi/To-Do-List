@@ -28,6 +28,9 @@ function addTask() {
         titleInput.value = '';
         descriptionInput.value = '';
         dueDateInput.value = '';
+
+        dueDateInput.focus();
+        
     } else {
         alert("Please enter a task!");
     }

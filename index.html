@@ -13,33 +13,53 @@
     <div class="nav-bar">
         <img src="./Assets/Logo-removebg-preview.png" alt="picture" id="picture">
     <nav>
+      <i class="fa-solid fa-search"><input type="search"></i>
         <a href="login.html" >Logout</a>
     </nav>
     </div>
     <div id="todo-container">
-    <div>
-        <label for="title">Title:</label>
-        <input id="titleInput" placeholder="Title"> </input>
-    </div>
-    <div>
-        <label for="description">Description:</label>
-        <input id="descriptionInput" placeholder="Description"> </input>
-    </div>
-    <div>
-        <label for="dueDate">Due Date:</label>
-        <input id="dueDateInput" placeholder="Due Date"> </input>
-    </div>
-    <div class="btns">
-        <button id="button">Add</button>
-        <button id="button2">Delete All</button>
-    </div>    
-    </div>
-    <div class="container-fluid">
-        <div class="tod-div">
-            <ul id="todo-item">
-            
-            </ul>
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title:</th>
+                        <th>Description:</th>
+                        <th>Due Date:</th>
+                        <th>Add Task:</th>
+                        <th>Delete All Tasks:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input id="titleInput" placeholder="Title">
+                        </td>
+                        <td>
+                            <input id="descriptionInput" placeholder="Description">
+                        </td>
+                        <td>
+                            <input type="date" id="dueDateInput" placeholder="Due Date">
+                        </td>
+                        <td class="btns">
+                            <button id="button">Add</button>
+                        </td>
+                        <td class="btns">
+                            <button id="button2">Delete All</button>
+                        </td>
+                    </tr>
+                </tbody>
+               
+            </table>
+           <h2>To do list:</h2>
+                            <div class="tod-div">
+                                <ul id="todo-item">
+                                   
+                                </ul>
+                            </div>
+                <!-- <div class="tod-div">
+                    <ul id="todo-item">
+                
+                    </ul>
+                </div> -->
         </div>
     </div>
  <script src="./index.js"></script> 

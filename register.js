@@ -4,25 +4,17 @@
 
         // Validation variables
         let isValid = true;
-        const firstName = document.getElementById('firstName').value.trim();
-        const lastName = document.getElementById('lastName').value.trim();
+        const fullName = document.getElementById('fullName').value.trim();
         const email = document.getElementById('email').value.trim();
         const contactNumber = document.getElementById('contactNumber').value.trim();
         const password = document.getElementById('password').value;
 
         // Validation conditions
-        if (firstName === '') {
-            document.getElementById('firstNameError').textContent = 'Please enter your first name';
+        if (fullName === '') {
+            document.getElementById('fullNameError').textContent = 'Please enter your full name';
             isValid = false;
         } else {
-            document.getElementById('firstNameError').textContent = '';
-        }
-
-        if (lastName === '') {
-            document.getElementById('lastNameError').textContent = 'Please enter your last name';
-            isValid = false;
-        } else {
-            document.getElementById('lastNameError').textContent = '';
+            document.getElementById('fullNameError').textContent = '';
         }
 
         if (email === '') {

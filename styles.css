@@ -25,16 +25,31 @@
      #picture {
       width:120px;
       height:80px;
-  }
-  .container {
-    background: transparent;
-  }
-  main {
-    /* background-image: url(Assets/AddTaskDesk.jpg) !important; */
+    }
+    .search{
+      width:100px;
+      height:40px;
+      border-radius: 5px 5px;
+    }
+
+    .input-with-icon {
+      position: relative;
+    }
+    .input-with-icon input {
+      padding-left: 30px; 
+    }
+    .input-with-icon .icon {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  /* main {
+    background-image: url(Assets/TodolistPreview.jpg) !important;
     background-repeat: no-repeat;
     background-size:cover;
     height:100vh;
-  }
+  } */
 
     /* index.html styling */
     .nav-bar {
@@ -44,17 +59,18 @@
       height: 100%;
       width: 80%;
       margin: auto;
-  }
+    }
 
-    #todo-container {
-    background-color: #fff;
+  #todo-container {
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 0 auto;
-    
-    }
+    backdrop-filter: blur(5px); 
+    }     
+
     
     #titleInput, #descriptionInput, #dueDateInput {
     width: calc(100% - 22px);
@@ -72,32 +88,17 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  margin-right: 5px; /* Adjust margin as needed */
-}
+  margin-right: 5px; 
+  }
 
 .btns button:hover {
   background-color: black;
-}
+  }
 
-    
-    /* #button, #button2 {
-      background-color: gray;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 3px;
-      width: 50%;
-      }
-
-    #button:hover, #button2:hover {
-    background-color: black;
-    } */
-
-    #todo-item {
+  #todo-item {
     padding:10px;
     margin:10px;
-    max-height: 300px;
-    }
+  }
 
     ul li{
     list-style-type: none ;
@@ -107,7 +108,7 @@
     padding: 10px;
     border: 1px solid 333;
     margin-bottom: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px 10px;
     width:30%;
     }
@@ -117,9 +118,9 @@
     }
     
     .link-text{
-    color:black;
+    color:black !important;  
     text-decoration:none;
-    background: transparent;
+    background: transparent !important;
     }
     
     /* Registration page */
@@ -131,7 +132,8 @@
       margin-left:150px;
     }
     #registrationForm {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px); 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -172,6 +174,7 @@
 
     input[type="submit"]:hover {
     background-color: black;
+    color:#fff;
     }
     /* Login Page styling */
     .login-fluid{
@@ -185,7 +188,8 @@
     }
 
     #loginForm {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px); 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -222,6 +226,7 @@
     }
     input[type="submit"]:hover {
     background-color: black;
+    color:#fff;
     }
     a{
       background-color: gray;
@@ -229,7 +234,8 @@
       border-radius:3px;
       color:#fff;
       padding: 10px 20px;
-      text-decoration:none
+      text-decoration:none;
+      height:20px !important;
     }
     a:hover{
       background-color: black;
@@ -240,4 +246,11 @@
     table {
       width: 100%;
       border-collapse: collapse;
+    }
+
+    @media screen and (max-width: 480px) {
+      table {
+        width: 20%;
+        border-collapse: collapse;
+      }
     }

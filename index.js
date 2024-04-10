@@ -4,7 +4,7 @@ const newItem = document.querySelector('#todo-item');
 const deleteButton = document.querySelector('#button2'); 
 const titleInput = document.querySelector('#titleInput');
 const descriptionInput = document.querySelector('#descriptionInput');
-
+const dueDateInput = document.querySelector('#dueDateInput');
 
 addButton.addEventListener('click', addTask);
 deleteButton.addEventListener('click', deleteAllTasks);
@@ -12,12 +12,14 @@ deleteButton.addEventListener('click', deleteAllTasks);
 function addTask() {
         const titleValue = titleInput.value.trim();
         const descriptionValue = descriptionInput.value.trim();
+        const dueDateValue = dueDateInput.value.trim();
 
     if (titleValue !== "") {
         const timestamp = new Date().toLocaleString();
         const task = {
             title: titleValue,
             description: descriptionValue,
+            dueDate: dueDateValue, 
             timestamp: timestamp
         };
         tasks.push(task);
@@ -25,6 +27,7 @@ function addTask() {
         renderTasks();
         titleInput.value = '';
         descriptionInput.value = '';
+        dueDateInput.value = '';
     } else {
         alert("Please enter a task!");
     }

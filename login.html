@@ -14,25 +14,26 @@
             <a href="login.html" >Logout</a>
         </nav>
         </div>
+      <div class="login-fluid">
+        <form id="loginForm" onsubmit="validateForm(event)">
+            <h2>Login</h2>
+            <div>
+                <label for="firstName">Username:</label>
+                <input type="text" id="userName" name="userName" required>
+                <span id="userNameError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        <p>Do not have an account? <a href="register.html" class="link-text">Register</a></p>
+        </form>
         </div>
-    <form action="index.html" id="loginForm" onsubmit="validateForm(event)">
-        <h2>Login</h2>
-        <div>
-            <label for="firstName">Username:</label>
-            <input type="text" id="userName" name="userName" required>
-            <span id="userNameError" class="error"></span>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <span id="passwordError" class="error"></span>
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-    </div>
-    <p>Do not have an account? <a href="register.html" class="link-text">Register</a></p>
-    </form>
-
+      </div>
+    <script src="login.js"></script>
 </body>
 </html>

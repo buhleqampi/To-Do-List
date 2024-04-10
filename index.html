@@ -16,24 +16,32 @@
         <a href="login.html" >Logout</a>
     </nav>
     </div>
+    <div id="todo-container">
+    <div>
+        <label for="title">Title:</label>
+        <input id="titleInput" placeholder="Title"> </input>
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <input id="descriptionInput" placeholder="Description"> </input>
+    </div>
+    <div>
+        <label for="dueDate">Due Date:</label>
+        <input id="dueDateInput" placeholder="Due Date"> </input>
+    </div>
+    <div class="btns">
+        <button id="button">Add</button>
+        <button id="button2">Delete All</button>
+    </div>    
     </div>
     <div class="container-fluid">
-    <div class="tod-div">
-        <ul id="todo-item">
-        
-        </ul>
+        <div class="tod-div">
+            <ul id="todo-item">
+            
+            </ul>
+        </div>
+        </div>
     </div>
-    </div>
-    <div id="todo-container" style="width:18rem;">
-    <input id="titleInput" placeholder="Title"> </input>
-    <input id="descriptionInput" placeholder="Description"> </input>
-    <div class="btns">
-        <button id="button">+</button>
-    </div>  
-    <div class="clear">
-        <button id="button2">Delete All</button>
-    </div>
-    </div>  
  <script src="./index.js"></script> 
 </main>  
 </body>

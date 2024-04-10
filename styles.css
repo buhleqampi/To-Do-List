@@ -12,9 +12,6 @@
     body {
     margin: 0;
     padding: 0;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 100vh;
     font-family: "Patrick Hand", cursive;
     font-weight: 400;
@@ -33,7 +30,7 @@
     background: transparent;
   }
   main {
-    background-image: url(Assets/AddTaskDesk.jpg) !important;
+    /* background-image: url(Assets/AddTaskDesk.jpg) !important; */
     background-repeat: no-repeat;
     background-size:cover;
     height:100vh;
@@ -47,23 +44,9 @@
       height: 100%;
       width: 80%;
       margin: auto;
-      /* background-color: #fff; */
   }
 
-    /* .search-feature {
-    margin-bottom: 20px;
-    }
-
-    .search {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    } */
-    
-    .btn-primary {
+     .btn-primary {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
@@ -78,12 +61,16 @@
     }
     
     #todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 0 auto;
     
     }
     
-    #titleInput, #descriptionInput {
+    #titleInput, #descriptionInput, #dueDateInput {
     width: calc(100% - 22px);
     padding: 8px;
     margin-bottom: 10px;
@@ -93,40 +80,27 @@
     }
     
     .btns {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     }
     
     #button, #button2 {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    width: 45%;
-    
-    }
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      width: 50%;
+      }
 
-    #button2{
-    margin-bottom: 20px;
-    }
-    
     #button:hover, #button2:hover {
     background-color: #45a049;
     }
-    /* .tod-div{
-      background-image: url(Assets/AltPaper.png);
-      background-repeat: no-repeat;
-      background-size:cover;
-    } */
+
     #todo-item {
     padding:10px;
     margin:10px;
     max-height: 300px;
-    /* overflow: auto; */
-    
-  
     }
 
     ul li{
@@ -137,10 +111,9 @@
     padding: 10px;
     border: 1px solid 333;
     margin-bottom: 10px;
-    background-color: #333;
+    background-color: #fff;
     border-radius: 10px 10px;
-    justify-content: end;
-    align-items:end;
+    width:20%;
     }
     
     .list-group-item i {
@@ -165,6 +138,12 @@
     }
     
     /* Registration page */
+    .register-fluid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
     #registrationForm {
     background-color: #fff;
     padding: 20px;
@@ -209,7 +188,7 @@
     background-color: #45a049;
     }
     /* Login Page styling */
-    .login{
+    .login-fluid{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -261,5 +240,3 @@
       border: 1px solid ;
       border-radius:10px 10px;
     }
-  
-    

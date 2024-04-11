@@ -35,7 +35,7 @@ function addTask() {
         alert("Please enter a task!");
     }
 }
-// An additional function that manipulates the html contents, creates an element, its className, and inserts an innerHTML contents
+
 function renderTasks() {
     newItem.innerHTML = '';
     tasks.slice().reverse().forEach((task, index) => {
@@ -52,13 +52,12 @@ function renderTasks() {
     });
 }
 
-// deletes only one task at a time
 function delTask(index) {
     tasks.splice(index, 1);
     saveTasksToLocalStorage();
     renderTasks();
 }
-// updates the task given but prompts are not always good for effective user interface
+
 function updateTask(index) {
     const task = tasks[index];
     const newTitle = prompt("Enter new title:", task.title);
@@ -71,20 +70,45 @@ function updateTask(index) {
     }
 }
 
-// Deletes all the tasks created
+
 function deleteAllTasks() {
     tasks.splice(0, tasks.length);
     saveTasksToLocalStorage();
-    renderTasks(); // Re-render the tasks list (empty)
+    renderTasks(); 
 }
 
-// localStorage functionality - JSON.stringify()-converts the tasks declared back to strings
+
 function saveTasksToLocalStorage() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 renderTasks()
 
-function searchTasks(){
-    
+function searchTasks(letter) {
+    const filteredTasks = tasks.filter(task => {
+        // Convert both task title and description to lowercase for case-insensitive search
+        const title = task.title.toLowerCase();
+        const description = task.description.toLowerCase();
+        const searchLetter = letter.toLowerCase();
+        // Check if either title or description starts with the search letter
+        return title.startsWith(searchLetter) || description.startsWith(searchLetter);
+    });
+
+    // Render the filtered tasks
+    renderFilteredTasks(filteredTasks);
+}
+
+function renderFilteredTasks(filteredTasks) {
+    newItem.innerHTML = '';
+    filteredTasks.slice().reverse().forEach((task, _index) => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.innerHTML = `<strong>Title:</strong> ${task.title}<br>
+        <strong>Description:</strong> ${task.description}<br>
+        <strong>Timestamp:</strong> ${task.timestamp}
+        <i onclick="delTask(${tasks.indexOf(task)})" class="fa-solid fa-trash"></i>
+        <i onclick="updateTask(${tasks.indexOf(task)})" class="fa-solid fa-pen-to-square"></i>`;
+      
+        newItem.appendChild(li);
+    });
 }
